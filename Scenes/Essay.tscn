@@ -1,0 +1,195 @@
+[gd_scene format=3 uid="uid://kuwuxbmtwf4t"]
+
+[ext_resource type="Texture2D" uid="uid://cr5l1ocpm7aup" path="res://Assets/Background/Gemini_Generated_Image_69gt2769gt2769gt.png" id="1_2k8ti"]
+[ext_resource type="Texture2D" uid="uid://ghbpe41dtpcb" path="res://Assets/Essay/Clip path group (17).png" id="2_nrpqx"]
+[ext_resource type="Texture2D" uid="uid://dw4oxoxa1seej" path="res://Assets/Essay/Clip path group (15).png" id="3_y1moa"]
+[ext_resource type="FontFile" uid="uid://dfgo81um78ww6" path="res://Font/LuckiestGuy-Regular.ttf" id="4_y46et"]
+[ext_resource type="Texture2D" uid="uid://c4xortmtn17qr" path="res://Assets/Essay/Clip path group (13).png" id="5_vlghy"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_clij1"]
+texture = ExtResource("1_2k8ti")
+modulate_color = Color(0.5936789, 0.5936789, 0.5936789, 1)
+
+[sub_resource type="Theme" id="Theme_clij1"]
+
+[node name="Essay" type="Node2D" unique_id=304423362]
+
+[node name="Node" type="Node" parent="." unique_id=1786433324]
+
+[node name="Panel" type="Panel" parent="Node" unique_id=843374601]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_clij1")
+
+[node name="bagian_soal" type="TextureRect" parent="Node/Panel" unique_id=173088727]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1358507
+anchor_top = 0.027777778
+anchor_right = 0.86414933
+anchor_bottom = 0.6126543
+grow_horizontal = 2
+theme = SubResource("Theme_clij1")
+texture = ExtResource("2_nrpqx")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Node/Panel/bagian_soal" unique_id=1595556368]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -202.50934
+offset_right = 202.50934
+offset_bottom = 82.0
+grow_horizontal = 2
+theme = SubResource("Theme_clij1")
+texture = ExtResource("3_y1moa")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Node/Panel/bagian_soal" unique_id=1558668812]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.31287247
+anchor_top = 0.04221636
+anchor_right = 0.6859356
+anchor_bottom = 0.17414248
+theme_override_colors/font_color = Color(0.96862745, 0.7607843, 0.40784314, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("4_y46et")
+theme_override_font_sizes/font_size = 18
+text = "Tantangan Matematika
+Penjumlahan dan Pengurangan"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Node/Panel/bagian_soal/Label" unique_id=1816121036]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.658147
+anchor_top = 2.68
+anchor_right = 1.6357827
+anchor_bottom = 3.98
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("4_y46et")
+theme_override_font_sizes/font_size = 30
+text = "Budi Memiliki 14 apel, jika anto memiliki 7 apel
+berapa jumlah apel yang dimiliki budi dan anto?"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="box_jawaban" type="VBoxContainer" parent="Node/Panel" unique_id=3275884]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.265625
+anchor_top = 0.5555556
+anchor_right = 0.734375
+anchor_bottom = 0.8611111
+offset_top = -3.0517578e-05
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Node/Panel/box_jawaban" unique_id=359409858]
+layout_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="button jawaban" type="TextureButton" parent="Node/Panel/box_jawaban/HBoxContainer" unique_id=881705302]
+layout_mode = 2
+texture_normal = ExtResource("5_vlghy")
+texture_pressed = ExtResource("5_vlghy")
+
+[node name="Label" type="Label" parent="Node/Panel/box_jawaban/HBoxContainer/button jawaban" unique_id=1762241696]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -20.5
+offset_right = 51.0
+offset_bottom = 30.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("4_y46et")
+theme_override_font_sizes/font_size = 50
+text = "A. 18"
+
+[node name="button jawaban2" type="TextureButton" parent="Node/Panel/box_jawaban/HBoxContainer" unique_id=2129947992]
+layout_mode = 2
+texture_normal = ExtResource("5_vlghy")
+texture_pressed = ExtResource("5_vlghy")
+
+[node name="Label" type="Label" parent="Node/Panel/box_jawaban/HBoxContainer/button jawaban2" unique_id=918489988]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -20.5
+offset_right = 51.0
+offset_bottom = 30.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("4_y46et")
+theme_override_font_sizes/font_size = 50
+text = "B. 15"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Node/Panel/box_jawaban" unique_id=489505071]
+layout_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="button jawaban" type="TextureButton" parent="Node/Panel/box_jawaban/HBoxContainer2" unique_id=1095538292]
+layout_mode = 2
+texture_normal = ExtResource("5_vlghy")
+texture_pressed = ExtResource("5_vlghy")
+
+[node name="Label" type="Label" parent="Node/Panel/box_jawaban/HBoxContainer2/button jawaban" unique_id=1623434230]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -20.5
+offset_right = 51.0
+offset_bottom = 30.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("4_y46et")
+theme_override_font_sizes/font_size = 50
+text = "C. 15.5"
+
+[node name="button jawaban2" type="TextureButton" parent="Node/Panel/box_jawaban/HBoxContainer2" unique_id=2086460134]
+layout_mode = 2
+texture_normal = ExtResource("5_vlghy")
+texture_pressed = ExtResource("5_vlghy")
+
+[node name="Label" type="Label" parent="Node/Panel/box_jawaban/HBoxContainer2/button jawaban2" unique_id=1578567219]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -20.5
+offset_right = 51.0
+offset_bottom = 30.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("4_y46et")
+theme_override_font_sizes/font_size = 50
+text = "D. 17"

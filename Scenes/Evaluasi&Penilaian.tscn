@@ -1,0 +1,346 @@
+[gd_scene format=3 uid="uid://cgs28ev4krq1x"]
+
+[ext_resource type="Texture2D" uid="uid://cr5l1ocpm7aup" path="res://Assets/Background/Gemini_Generated_Image_69gt2769gt2769gt.png" id="1_esp1n"]
+[ext_resource type="FontFile" uid="uid://dfgo81um78ww6" path="res://Font/LuckiestGuy-Regular.ttf" id="2_5bjmr"]
+[ext_resource type="Texture2D" uid="uid://c6vd04fs3nj4n" path="res://Assets/Evaluasi_assets/Clip path group (6).png" id="2_ugvc2"]
+[ext_resource type="Texture2D" uid="uid://b1j324rfer42c" path="res://Assets/Button/Clip path group (10).png" id="2_xq6l1"]
+[ext_resource type="Texture2D" uid="uid://blq7r84ndu7co" path="res://Assets/Button/Clip path group (8).png" id="3_5iwkt"]
+[ext_resource type="Texture2D" uid="uid://cmsdynfnl811h" path="res://Assets/Evaluasi_assets/Clip path group (1).png" id="3_ugvc2"]
+[ext_resource type="Texture2D" uid="uid://gdahsl1ydwv8" path="res://Assets/Evaluasi_assets/Clip path group (5).png" id="4_cp26w"]
+[ext_resource type="Texture2D" uid="uid://cidocy45csrxk" path="res://Assets/Evaluasi_assets/Clip path group (7).png" id="6_ugvc2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2n08u"]
+texture = ExtResource("1_esp1n")
+modulate_color = Color(0.5370987, 0.5370987, 0.5370987, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_xq6l1"]
+
+[node name="Ngck" type="Node2D" unique_id=174158244]
+
+[node name="Node" type="Node" parent="." unique_id=1640982815]
+
+[node name="Panel" type="Panel" parent="Node" unique_id=1960525060]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = 1.0
+offset_right = -1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_2n08u")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Node/Panel" unique_id=629235491]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -82.0
+offset_right = 383.0
+grow_vertical = 0
+
+[node name="Button Retest" type="TextureRect" parent="Node/Panel" unique_id=1828808964]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.17621528
+anchor_top = 0.8734568
+anchor_right = 0.3342747
+anchor_bottom = 0.9722222
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_xq6l1")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button Menu" type="TextureRect" parent="Node/Panel" unique_id=1108611394]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.00086805556
+anchor_top = 0.875
+anchor_right = 0.16953976
+anchor_bottom = 0.9814815
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_5iwkt")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Presentase benar2" type="TextureRect" parent="Node/Panel" unique_id=1852969010]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3967014
+anchor_top = 0.4537037
+anchor_right = 0.7925347
+anchor_bottom = 0.712963
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ugvc2")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Judul" type="Label" parent="Node/Panel/Presentase benar2" unique_id=876402148]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.102000006
+anchor_top = 0.142
+anchor_right = 0.919
+anchor_bottom = 0.22900002
+offset_left = -1.0940018
+offset_top = 0.04399681
+offset_right = -0.042999268
+offset_bottom = 0.0779953
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.95686275, 0.75686276, 0.49803922, 1)
+theme_override_colors/font_outline_color = Color(0.2627451, 0.11764706, 0.011764706, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_5bjmr")
+theme_override_font_sizes/font_size = 18
+text = "Performa kamu"
+horizontal_alignment = 1
+
+[node name="Skor_nilai" type="Label" parent="Node/Panel/Presentase benar2" unique_id=1642355327]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.17324561
+anchor_top = 0.42261904
+anchor_right = 0.82894737
+anchor_bottom = 0.6666667
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.95686275, 0.75686276, 0.49803922, 1)
+theme_override_colors/font_outline_color = Color(0.2627451, 0.11764706, 0.011764706, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_5bjmr")
+theme_override_font_sizes/font_size = 40
+text = "20% meningkat"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Judul" type="Label" parent="Node/Panel" unique_id=2009569803]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.17500001
+anchor_top = 0.046000004
+anchor_right = 0.82600003
+anchor_bottom = 0.162
+offset_left = 0.3999939
+offset_top = 0.19199753
+offset_right = 0.447937
+offset_bottom = 0.024002075
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9508925, 0.756052, 0.5424669, 1)
+theme_override_colors/font_outline_color = Color(0.4627451, 0.32156864, 0.05490196, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_5bjmr")
+theme_override_font_sizes/font_size = 74
+text = "Evaluasi & Penilaian "
+
+[node name="Presentase benar" type="TextureRect" parent="Node/Panel" unique_id=2093358615]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.21100001
+anchor_top = 0.21800001
+anchor_right = 0.38200003
+anchor_bottom = 0.59800005
+offset_left = -0.072006226
+offset_top = -0.26400757
+offset_right = -0.06402588
+offset_bottom = -28.504028
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ugvc2")
+expand_mode = 1
+
+[node name="Judul" type="Label" parent="Node/Panel/Presentase benar" unique_id=2008450459]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.102000006
+anchor_top = 0.142
+anchor_right = 0.919
+anchor_bottom = 0.22900002
+offset_left = -1.0940018
+offset_top = 0.04399681
+offset_right = -0.042999268
+offset_bottom = 0.0779953
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.95686275, 0.75686276, 0.49803922, 1)
+theme_override_colors/font_outline_color = Color(0.2627451, 0.11764706, 0.011764706, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_5bjmr")
+theme_override_font_sizes/font_size = 18
+text = "Presentase Benar"
+horizontal_alignment = 1
+
+[node name="Skor_nilai" type="Label" parent="Node/Panel/Presentase benar" unique_id=1786390838]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -58.0
+offset_top = -30.5
+offset_right = 58.0
+offset_bottom = 30.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.95686275, 0.75686276, 0.49803922, 1)
+theme_override_colors/font_outline_color = Color(0.2627451, 0.11764706, 0.011764706, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_5bjmr")
+theme_override_font_sizes/font_size = 60
+text = "80%"
+horizontal_alignment = 1
+
+[node name="container_jawaban" type="HBoxContainer" parent="Node/Panel" unique_id=955144446]
+layout_mode = 0
+anchor_left = 0.3923611
+anchor_top = 0.2191358
+anchor_right = 0.7855903
+anchor_bottom = 0.44907406
+metadata/_edit_use_anchors_ = true
+
+[node name="Jawaban_salah" type="TextureRect" parent="Node/Panel/container_jawaban" unique_id=569073355]
+layout_mode = 2
+texture = ExtResource("4_cp26w")
+
+[node name="Judul" type="Label" parent="Node/Panel/container_jawaban/Jawaban_salah" unique_id=2109117256]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.15100001
+anchor_top = 0.142
+anchor_right = 0.81700003
+anchor_bottom = 0.35900003
+offset_left = 0.09899902
+offset_top = 3.9599972
+offset_right = -0.06700134
+offset_bottom = 0.050994873
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.95686275, 0.75686276, 0.49803922, 1)
+theme_override_colors/font_outline_color = Color(0.2627451, 0.11764706, 0.011764706, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_5bjmr")
+theme_override_font_sizes/font_size = 18
+text = "Jawbaan Benar"
+horizontal_alignment = 1
+
+[node name="Skor_nilai" type="Label" parent="Node/Panel/container_jawaban/Jawaban_salah" unique_id=1146683405]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.275
+anchor_top = 0.517
+anchor_right = 0.74500006
+anchor_bottom = 0.82500005
+offset_left = -4.020008
+offset_top = -0.040000916
+offset_right = 3.9999695
+offset_bottom = -5.2400055
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.95686275, 0.75686276, 0.49803922, 1)
+theme_override_colors/font_outline_color = Color(0.2627451, 0.11764706, 0.011764706, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_5bjmr")
+theme_override_font_sizes/font_size = 40
+text = "22 / 25"
+
+[node name="Jawaban_benar" type="TextureRect" parent="Node/Panel/container_jawaban" unique_id=127107060]
+layout_mode = 2
+texture = ExtResource("4_cp26w")
+
+[node name="Judul" type="Label" parent="Node/Panel/container_jawaban/Jawaban_benar" unique_id=444608039]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.15100001
+anchor_top = 0.142
+anchor_right = 0.81700003
+anchor_bottom = 0.35900003
+offset_left = 0.09899902
+offset_top = 3.9599972
+offset_right = -0.06700134
+offset_bottom = 0.050994873
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.95686275, 0.75686276, 0.49803922, 1)
+theme_override_colors/font_outline_color = Color(0.2627451, 0.11764706, 0.011764706, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_5bjmr")
+theme_override_font_sizes/font_size = 18
+text = "Jawaban salah"
+horizontal_alignment = 1
+
+[node name="Skor_nilai" type="Label" parent="Node/Panel/container_jawaban/Jawaban_benar" unique_id=1790845570]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.275
+anchor_top = 0.517
+anchor_right = 0.74500006
+anchor_bottom = 0.82500005
+offset_left = -0.025009155
+offset_top = -0.040000916
+offset_right = 0.0049743652
+offset_bottom = 3.9999924
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.95686275, 0.75686276, 0.49803922, 1)
+theme_override_colors/font_outline_color = Color(0.2627451, 0.11764706, 0.011764706, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_5bjmr")
+theme_override_font_sizes/font_size = 40
+text = "3 / 25"
+
+[node name="Presentase benar3" type="TextureRect" parent="Node/Panel" unique_id=2079176168]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.39583334
+anchor_top = 0.69598764
+anchor_right = 0.7916667
+anchor_bottom = 0.9552469
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_ugvc2")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Judul" type="Label" parent="Node/Panel/Presentase benar3" unique_id=204003812]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35307017
+anchor_top = 0.14285699
+anchor_right = 0.66885966
+anchor_bottom = 0.25595224
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.95686275, 0.75686276, 0.49803922, 1)
+theme_override_colors/font_outline_color = Color(0.2627451, 0.11764706, 0.011764706, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_5bjmr")
+theme_override_font_sizes/font_size = 14
+text = "Respon Mentor"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Skor_nilai" type="Label" parent="Node/Panel/Presentase benar3" unique_id=1743729949]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.32894734
+anchor_top = 0.32738087
+anchor_right = 0.9254386
+anchor_bottom = 0.8154761
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.95686275, 0.75686276, 0.49803922, 1)
+theme_override_colors/font_outline_color = Color(0.2627451, 0.11764706, 0.011764706, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = SubResource("FontVariation_xq6l1")
+theme_override_font_sizes/font_size = 10
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Fusce ac rutrum risus, nec posuere turpis. 
+Vestibulum nulla lorem, blandit di vulputate at, 
+tortor.
+ "
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Node/Panel" unique_id=567920617]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
