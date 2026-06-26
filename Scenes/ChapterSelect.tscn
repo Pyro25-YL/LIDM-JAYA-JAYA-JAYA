@@ -1,3 +1,223 @@
 [gd_scene format=3 uid="uid://binoxkrsgkyrw"]
 
-[node name="ChapterSelect" type="Node2D" unique_id=845374321]
+[ext_resource type="Texture2D" uid="uid://cr5l1ocpm7aup" path="res://Assets/Background/Gemini_Generated_Image_69gt2769gt2769gt.png" id="1_6j18p"]
+[ext_resource type="Script" uid="uid://dd424uv7vbmq7" path="res://Scripts/chapter_selectv_2.gd" id="1_capi8"]
+[ext_resource type="Texture2D" uid="uid://bke11o8ly02xn" path="res://Assets/Button/ui/chapter_btn.png" id="3_capi8"]
+[ext_resource type="Texture2D" uid="uid://bkd0xpmpvrtjb" path="res://Assets/Button/ui/chapter_click_btn.png" id="4_16qhn"]
+[ext_resource type="Texture2D" uid="uid://uwpn2ge8dust" path="res://Assets/Button/ui/back_btn.png" id="4_x5rnk"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e5542"]
+texture = ExtResource("1_6j18p")
+
+[node name="ChapterSelectv2" type="Control" unique_id=2075063189 node_paths=PackedStringArray("btn_back", "btn_chapter_1", "btn_chapter_2", "btn_chapter_3", "btn_chapter_4")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_capi8")
+btn_back = NodePath("BackBtn")
+btn_chapter_1 = NodePath("ChapterButtons/ChapterBtn1")
+btn_chapter_2 = NodePath("ChapterButtons/ChapterBtn2")
+btn_chapter_3 = NodePath("ChapterButtons/ChapterBtn3")
+btn_chapter_4 = NodePath("ChapterButtons/ChapterBtn4")
+
+[node name="Background" type="Panel" parent="." unique_id=798678506]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_e5542")
+
+[node name="ChapterButtons" type="Node" parent="." unique_id=1313391803]
+
+[node name="ChapterBtn1" type="TextureButton" parent="ChapterButtons" unique_id=322451150]
+custom_minimum_size = Vector2(200, 200)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -14.0
+offset_right = 100.0
+offset_bottom = 186.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+pivot_offset = Vector2(100, 0)
+texture_normal = ExtResource("3_capi8")
+texture_pressed = ExtResource("4_16qhn")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ChapterLabel1" type="Label" parent="ChapterButtons" unique_id=1135802293]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -58.0
+offset_top = 149.0
+offset_right = 68.0
+offset_bottom = 183.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.5707964
+pivot_offset = Vector2(63, 17)
+theme_override_colors/font_color = Color(0.62286913, 0.3957773, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.64705884)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Chapter 1"
+uppercase = true
+
+[node name="ChapterBtn2" type="TextureButton" parent="ChapterButtons" unique_id=1648623161]
+custom_minimum_size = Vector2(200, 200)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = -10.0
+offset_right = 104.0
+offset_bottom = 190.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.5707964
+scale = Vector2(1.5, 1.5)
+pivot_offset = Vector2(100, 0)
+texture_normal = ExtResource("3_capi8")
+texture_pressed = ExtResource("4_16qhn")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ChapterLabel2" type="Label" parent="ChapterButtons" unique_id=108752484]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -241.0
+offset_top = -25.0
+offset_right = -115.0
+offset_bottom = 46.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(63, 17)
+theme_override_colors/font_color = Color(0.62286913, 0.3957773, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.64705884)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Chapter 2
+"
+uppercase = true
+
+[node name="ChapterBtn3" type="TextureButton" parent="ChapterButtons" unique_id=1990467385]
+custom_minimum_size = Vector2(200, 200)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -6.0
+offset_right = 100.0
+offset_bottom = 194.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.1415927
+scale = Vector2(1.5, 1.5)
+pivot_offset = Vector2(100, 0)
+texture_normal = ExtResource("3_capi8")
+texture_pressed = ExtResource("4_16qhn")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ChapterLabel3" type="Label" parent="ChapterButtons" unique_id=1552743708]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.0
+offset_top = -196.0
+offset_right = 56.0
+offset_bottom = -125.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 4.712389
+pivot_offset = Vector2(63, 17)
+theme_override_colors/font_color = Color(0.62286913, 0.3957773, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.64705884)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Chapter 3"
+uppercase = true
+
+[node name="ChapterBtn4" type="TextureButton" parent="ChapterButtons" unique_id=561203494]
+custom_minimum_size = Vector2(200, 200)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -104.0
+offset_top = -10.0
+offset_right = 96.0
+offset_bottom = 190.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 4.712389
+scale = Vector2(1.5, 1.5)
+pivot_offset = Vector2(100, 0)
+texture_normal = ExtResource("3_capi8")
+texture_pressed = ExtResource("4_16qhn")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ChapterLabel4" type="Label" parent="ChapterButtons" unique_id=1490568349]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 112.0
+offset_top = -31.0
+offset_right = 238.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(63, 17)
+theme_override_colors/font_color = Color(0.62286913, 0.3957773, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.64705884)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Chapter 4"
+uppercase = true
+
+[node name="BackBtn" type="TextureButton" parent="." unique_id=621221353]
+custom_minimum_size = Vector2(180, 75)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.009000001
+anchor_top = 0.015000001
+anchor_right = 0.165
+anchor_bottom = 0.13100001
+offset_left = -0.36800098
+offset_top = 0.27999973
+offset_right = -0.08000183
+offset_bottom = 0.11199188
+texture_normal = ExtResource("4_x5rnk")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="button_up" from="ChapterButtons/ChapterBtn1" to="." method="_on_texture_button_button_up"]
+[connection signal="button_up" from="ChapterButtons/ChapterBtn2" to="." method="_on_texture_button_2_button_up"]
+[connection signal="button_up" from="ChapterButtons/ChapterBtn3" to="." method="_on_texture_button_3_button_up"]
+[connection signal="button_up" from="ChapterButtons/ChapterBtn4" to="." method="_on_texture_button_4_button_up"]
+[connection signal="button_up" from="BackBtn" to="." method="_on_btn_back_button_up"]
