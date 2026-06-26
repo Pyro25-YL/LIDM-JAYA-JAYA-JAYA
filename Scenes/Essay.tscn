@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://kuwuxbmtwf4t"]
 
 [ext_resource type="Texture2D" uid="uid://cr5l1ocpm7aup" path="res://Assets/Background/Gemini_Generated_Image_69gt2769gt2769gt.png" id="1_2k8ti"]
+[ext_resource type="Script" uid="uid://dqcuh5aio7ves" path="res://essay_script.gd" id="1_y1moa"]
 [ext_resource type="Texture2D" uid="uid://ghbpe41dtpcb" path="res://Assets/Essay/Clip path group (17).png" id="2_nrpqx"]
 [ext_resource type="Texture2D" uid="uid://dw4oxoxa1seej" path="res://Assets/Essay/Clip path group (15).png" id="3_y1moa"]
 [ext_resource type="FontFile" uid="uid://dfgo81um78ww6" path="res://Font/LuckiestGuy-Regular.ttf" id="4_y46et"]
@@ -12,7 +13,14 @@ modulate_color = Color(0.5936789, 0.5936789, 0.5936789, 1)
 
 [sub_resource type="Theme" id="Theme_clij1"]
 
-[node name="Essay" type="Node2D" unique_id=304423362]
+[node name="Essay" type="Control" unique_id=89132923]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y1moa")
 
 [node name="Node" type="Node" parent="." unique_id=1786433324]
 
@@ -98,12 +106,13 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="button jawaban" type="TextureButton" parent="Node/Panel/box_jawaban/HBoxContainer" unique_id=881705302]
+[node name="button_jawaban" type="TextureButton" parent="Node/Panel/box_jawaban/HBoxContainer" unique_id=881705302]
 layout_mode = 2
+action_mode = 0
 texture_normal = ExtResource("5_vlghy")
 texture_pressed = ExtResource("5_vlghy")
 
-[node name="Label" type="Label" parent="Node/Panel/box_jawaban/HBoxContainer/button jawaban" unique_id=1762241696]
+[node name="Label" type="Label" parent="Node/Panel/box_jawaban/HBoxContainer/button_jawaban" unique_id=1762241696]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -121,12 +130,12 @@ theme_override_fonts/font = ExtResource("4_y46et")
 theme_override_font_sizes/font_size = 50
 text = "A. 18"
 
-[node name="button jawaban2" type="TextureButton" parent="Node/Panel/box_jawaban/HBoxContainer" unique_id=2129947992]
+[node name="button_jawaban2" type="TextureButton" parent="Node/Panel/box_jawaban/HBoxContainer" unique_id=2129947992]
 layout_mode = 2
 texture_normal = ExtResource("5_vlghy")
 texture_pressed = ExtResource("5_vlghy")
 
-[node name="Label" type="Label" parent="Node/Panel/box_jawaban/HBoxContainer/button jawaban2" unique_id=918489988]
+[node name="Label" type="Label" parent="Node/Panel/box_jawaban/HBoxContainer/button_jawaban2" unique_id=918489988]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -148,12 +157,12 @@ text = "B. 15"
 layout_mode = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="button jawaban" type="TextureButton" parent="Node/Panel/box_jawaban/HBoxContainer2" unique_id=1095538292]
+[node name="button_jawaban3" type="TextureButton" parent="Node/Panel/box_jawaban/HBoxContainer2" unique_id=1095538292]
 layout_mode = 2
 texture_normal = ExtResource("5_vlghy")
 texture_pressed = ExtResource("5_vlghy")
 
-[node name="Label" type="Label" parent="Node/Panel/box_jawaban/HBoxContainer2/button jawaban" unique_id=1623434230]
+[node name="Label" type="Label" parent="Node/Panel/box_jawaban/HBoxContainer2/button_jawaban3" unique_id=1623434230]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -171,12 +180,12 @@ theme_override_fonts/font = ExtResource("4_y46et")
 theme_override_font_sizes/font_size = 50
 text = "C. 15.5"
 
-[node name="button jawaban2" type="TextureButton" parent="Node/Panel/box_jawaban/HBoxContainer2" unique_id=2086460134]
+[node name="button_jawaban4" type="TextureButton" parent="Node/Panel/box_jawaban/HBoxContainer2" unique_id=2086460134]
 layout_mode = 2
 texture_normal = ExtResource("5_vlghy")
 texture_pressed = ExtResource("5_vlghy")
 
-[node name="Label" type="Label" parent="Node/Panel/box_jawaban/HBoxContainer2/button jawaban2" unique_id=1578567219]
+[node name="Label" type="Label" parent="Node/Panel/box_jawaban/HBoxContainer2/button_jawaban4" unique_id=1578567219]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
