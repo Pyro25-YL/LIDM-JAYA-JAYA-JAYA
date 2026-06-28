@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cgs28ev4krq1x"]
 
+[ext_resource type="Script" uid="uid://dvdcbfnqpku3n" path="res://Scenes/evaluasi&penilaian.gd" id="1_5iwkt"]
 [ext_resource type="Texture2D" uid="uid://cr5l1ocpm7aup" path="res://Assets/Background/Gemini_Generated_Image_69gt2769gt2769gt.png" id="1_esp1n"]
 [ext_resource type="FontFile" uid="uid://dfgo81um78ww6" path="res://Font/LuckiestGuy-Regular.ttf" id="2_5bjmr"]
 [ext_resource type="Texture2D" uid="uid://c6vd04fs3nj4n" path="res://Assets/Evaluasi_assets/Clip path group (6).png" id="2_ugvc2"]
@@ -15,7 +16,8 @@ modulate_color = Color(0.5370987, 0.5370987, 0.5370987, 1)
 
 [sub_resource type="FontVariation" id="FontVariation_xq6l1"]
 
-[node name="Ngck" type="Node2D" unique_id=174158244]
+[node name="Evaluasi&Penilaian" type="Node2D" unique_id=174158244]
+script = ExtResource("1_5iwkt")
 
 [node name="Node" type="Node" parent="." unique_id=1640982815]
 
@@ -40,7 +42,7 @@ offset_top = -82.0
 offset_right = 383.0
 grow_vertical = 0
 
-[node name="Button Retest" type="TextureRect" parent="Node/Panel" unique_id=1828808964]
+[node name="Button_Retest" type="TextureRect" parent="Node/Panel" unique_id=1828808964]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.17621528
@@ -53,7 +55,7 @@ texture = ExtResource("2_xq6l1")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Button Menu" type="TextureRect" parent="Node/Panel" unique_id=1108611394]
+[node name="Button_menu" type="TextureRect" parent="Node/Panel" unique_id=1108611394]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.00086805556
@@ -66,7 +68,7 @@ texture = ExtResource("3_5iwkt")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Presentase benar2" type="TextureRect" parent="Node/Panel" unique_id=1852969010]
+[node name="Performa" type="TextureRect" parent="Node/Panel" unique_id=1852969010]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.3967014
@@ -79,7 +81,7 @@ texture = ExtResource("2_ugvc2")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Judul" type="Label" parent="Node/Panel/Presentase benar2" unique_id=876402148]
+[node name="Judul" type="Label" parent="Node/Panel/Performa" unique_id=876402148]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.102000006
@@ -99,7 +101,7 @@ theme_override_font_sizes/font_size = 18
 text = "Performa kamu"
 horizontal_alignment = 1
 
-[node name="Skor_nilai" type="Label" parent="Node/Panel/Presentase benar2" unique_id=1642355327]
+[node name="Skor_nilai" type="Label" parent="Node/Panel/Performa" unique_id=1642355327]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.17324561
@@ -136,7 +138,7 @@ theme_override_fonts/font = ExtResource("2_5bjmr")
 theme_override_font_sizes/font_size = 74
 text = "Evaluasi & Penilaian "
 
-[node name="Presentase benar" type="TextureRect" parent="Node/Panel" unique_id=2093358615]
+[node name="Presentase_benar" type="TextureRect" parent="Node/Panel" unique_id=2093358615]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.21100001
@@ -152,7 +154,7 @@ grow_vertical = 2
 texture = ExtResource("3_ugvc2")
 expand_mode = 1
 
-[node name="Judul" type="Label" parent="Node/Panel/Presentase benar" unique_id=2008450459]
+[node name="Judul" type="Label" parent="Node/Panel/Presentase_benar" unique_id=2008450459]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.102000006
@@ -172,7 +174,7 @@ theme_override_font_sizes/font_size = 18
 text = "Presentase Benar"
 horizontal_alignment = 1
 
-[node name="Skor_nilai" type="Label" parent="Node/Panel/Presentase benar" unique_id=1786390838]
+[node name="Skor_nilai" type="Label" parent="Node/Panel/Presentase_benar" unique_id=1786390838]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -289,7 +291,7 @@ theme_override_fonts/font = ExtResource("2_5bjmr")
 theme_override_font_sizes/font_size = 40
 text = "3 / 25"
 
-[node name="Presentase benar3" type="TextureRect" parent="Node/Panel" unique_id=2079176168]
+[node name="Respon_mentor" type="TextureRect" parent="Node/Panel" unique_id=2079176168]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.39583334
@@ -302,7 +304,7 @@ texture = ExtResource("6_ugvc2")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Judul" type="Label" parent="Node/Panel/Presentase benar3" unique_id=204003812]
+[node name="Judul" type="Label" parent="Node/Panel/Respon_mentor" unique_id=204003812]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.35307017
@@ -319,7 +321,7 @@ text = "Respon Mentor"
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Skor_nilai" type="Label" parent="Node/Panel/Presentase benar3" unique_id=1743729949]
+[node name="komentar" type="Label" parent="Node/Panel/Respon_mentor" unique_id=1743729949]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.32894734
