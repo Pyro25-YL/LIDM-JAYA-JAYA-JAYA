@@ -1,0 +1,196 @@
+[gd_scene format=3 uid="uid://byi55ntv5nfi8"]
+
+[ext_resource type="Texture2D" uid="uid://cr5l1ocpm7aup" path="res://Assets/Background/Gemini_Generated_Image_69gt2769gt2769gt.png" id="1_lnb4o"]
+[ext_resource type="Script" uid="uid://d0fymk2mwbnsg" path="res://Scripts/CodeBlock.gd" id="1_lsu67"]
+[ext_resource type="Texture2D" uid="uid://cmsdynfnl811h" path="res://Assets/Evaluasi_assets/Clip path group (1).png" id="1_noktt"]
+[ext_resource type="Script" uid="uid://dwtkf2mfucldu" path="res://Scripts/DropZoneNode.gd" id="2_noktt"]
+[ext_resource type="Texture2D" uid="uid://cm33v8mpa0es1" path="res://Assets/Button/segitiga.png" id="5_yw33r"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_beehg"]
+texture = ExtResource("1_lnb4o")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gxs8b"]
+texture = ExtResource("1_noktt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8x7un"]
+texture = ExtResource("1_noktt")
+
+[node name="DragAndDropCoding" type="Control" unique_id=549007850]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Panel" parent="." unique_id=2071433188]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_beehg")
+script = ExtResource("2_noktt")
+
+[node name="Panel2" type="Panel" parent="." unique_id=1987965039]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.156
+anchor_bottom = 1.0
+offset_right = -179.712
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel2" unique_id=329724841]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -79.5
+offset_right = 79.5
+grow_horizontal = 2
+grow_vertical = 2
+accessibility_region = true
+
+[node name="Panel" type="Panel" parent="Panel2/VBoxContainer" unique_id=1275269152]
+custom_minimum_size = Vector2(159, 100)
+layout_mode = 2
+script = ExtResource("1_lsu67")
+
+[node name="TextureRect" type="TextureRect" parent="Panel2/VBoxContainer/Panel" unique_id=369126953]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_lnb4o")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Panel2/VBoxContainer/Panel" unique_id=801695117]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "IF ELSE"
+
+[node name="Button" type="Button" parent="Panel2/VBoxContainer/Panel" unique_id=1792349942]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -34.0
+offset_top = -31.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Del"
+
+[node name="Panel2" type="Panel" parent="Panel2/VBoxContainer" unique_id=1526753587]
+custom_minimum_size = Vector2(159, 100)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Panel2/VBoxContainer/Panel2" unique_id=649781090]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel3" type="Panel" parent="Panel2/VBoxContainer" unique_id=1743458576]
+custom_minimum_size = Vector2(159, 100)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Panel2/VBoxContainer/Panel3" unique_id=12529173]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelSoal" type="Panel" parent="." unique_id=456251410]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -293.0
+offset_bottom = 68.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_gxs8b")
+
+[node name="LabelSoal" type="Label" parent="PanelSoal" unique_id=896085367]
+layout_mode = 1
+offset_left = 20.0
+offset_top = 10.0
+offset_right = 60.0
+offset_bottom = 33.0
+theme_override_font_sizes/font_size = 12
+text = "Soal"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Soal" type="Label" parent="PanelSoal" unique_id=160298594]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.5
+offset_top = -11.5
+offset_right = 90.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 16
+text = "Munculkan Halo Dunia!"
+
+[node name="PanelOutputProgram" type="Panel" parent="." unique_id=1502517062]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.16100001
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.5279846
+offset_top = -124.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_8x7un")
+
+[node name="TextureButton" type="TextureButton" parent="PanelOutputProgram" unique_id=778484213]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.057000004
+anchor_top = 0.065000005
+anchor_right = 0.098000005
+anchor_bottom = 0.38700002
+offset_left = -0.005004883
+offset_top = -0.06000042
+offset_right = 0.42999268
+offset_bottom = 0.011997223
+rotation = 1.5707964
+pivot_offset = Vector2(20, 20)
+texture_normal = ExtResource("5_yw33r")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="LabelHasil" type="Label" parent="PanelOutputProgram" unique_id=1489109828]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.11400001
+anchor_top = 0.097
+anchor_right = 0.17300001
+anchor_bottom = 0.33100003
+offset_left = -0.010009766
+offset_top = -5.028
+offset_right = 0.054992676
+offset_bottom = -0.044002533
+theme_override_font_sizes/font_size = 24
+text = "Hasil"
+
+[connection signal="button_up" from="Panel2/VBoxContainer/Panel/Button" to="Panel2/VBoxContainer/Panel" method="_on_button_button_up"]
