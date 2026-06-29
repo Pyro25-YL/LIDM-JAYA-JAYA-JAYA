@@ -5,10 +5,10 @@
 [ext_resource type="FontFile" uid="uid://dfgo81um78ww6" path="res://Font/LuckiestGuy-Regular.ttf" id="2_5bjmr"]
 [ext_resource type="Texture2D" uid="uid://c6vd04fs3nj4n" path="res://Assets/Evaluasi_assets/Clip path group (6).png" id="2_ugvc2"]
 [ext_resource type="Texture2D" uid="uid://b1j324rfer42c" path="res://Assets/Button/Clip path group (10).png" id="2_xq6l1"]
+[ext_resource type="Texture2D" uid="uid://blq7r84ndu7co" path="res://Assets/Button/Clip path group (8).png" id="3_5iwkt"]
 [ext_resource type="Texture2D" uid="uid://cmsdynfnl811h" path="res://Assets/Evaluasi_assets/Clip path group (1).png" id="3_ugvc2"]
 [ext_resource type="Texture2D" uid="uid://gdahsl1ydwv8" path="res://Assets/Evaluasi_assets/Clip path group (5).png" id="4_cp26w"]
 [ext_resource type="Texture2D" uid="uid://cidocy45csrxk" path="res://Assets/Evaluasi_assets/Clip path group (7).png" id="6_ugvc2"]
-[ext_resource type="Texture2D" uid="uid://uwpn2ge8dust" path="res://Assets/Button/ui/back_btn.png" id="9_5iwkt"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2n08u"]
 texture = ExtResource("1_esp1n")
@@ -41,6 +41,32 @@ anchor_bottom = 1.0
 offset_top = -82.0
 offset_right = 383.0
 grow_vertical = 0
+
+[node name="Button_Retest" type="TextureRect" parent="Node/Panel" unique_id=1828808964]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.17621528
+anchor_top = 0.8734568
+anchor_right = 0.3342747
+anchor_bottom = 0.9722222
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_xq6l1")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button_menu" type="TextureRect" parent="Node/Panel" unique_id=1108611394]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.00086805556
+anchor_top = 0.875
+anchor_right = 0.16953976
+anchor_bottom = 0.9814815
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_5iwkt")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Performa" type="TextureRect" parent="Node/Panel" unique_id=1852969010]
 layout_mode = 1
@@ -320,31 +346,3 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-
-[node name="btn_retest" type="TextureButton" parent="Node/Panel" unique_id=59210039]
-layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 32.0
-offset_top = -196.0
-offset_right = 463.0
-offset_bottom = -20.0
-grow_vertical = 0
-rotation = -6.2831855
-scale = Vector2(0.5, 0.5)
-texture_normal = ExtResource("2_xq6l1")
-stretch_mode = 0
-
-[node name="btn_back" type="TextureButton" parent="Node/Panel" unique_id=1663890315]
-layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 22.0
-offset_top = -102.0
-offset_right = 279.0
-offset_bottom = -7.0
-grow_vertical = 0
-texture_normal = ExtResource("9_5iwkt")
-stretch_mode = 0

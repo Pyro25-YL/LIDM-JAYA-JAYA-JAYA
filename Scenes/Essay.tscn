@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://kuwuxbmtwf4t"]
 
 [ext_resource type="Texture2D" uid="uid://cr5l1ocpm7aup" path="res://Assets/Background/Gemini_Generated_Image_69gt2769gt2769gt.png" id="1_2k8ti"]
-[ext_resource type="Script" uid="uid://dqcuh5aio7ves" path="res://essay_script.gd" id="1_y1moa"]
+[ext_resource type="Script" uid="uid://dqcuh5aio7ves" path="res://Code/essay_script.gd" id="1_y1moa"]
 [ext_resource type="Texture2D" uid="uid://ghbpe41dtpcb" path="res://Assets/Essay/Clip path group (17).png" id="2_nrpqx"]
 [ext_resource type="Texture2D" uid="uid://dw4oxoxa1seej" path="res://Assets/Essay/Clip path group (15).png" id="3_y1moa"]
 [ext_resource type="FontFile" uid="uid://dfgo81um78ww6" path="res://Font/LuckiestGuy-Regular.ttf" id="4_y46et"]
@@ -12,6 +12,9 @@ texture = ExtResource("1_2k8ti")
 modulate_color = Color(0.5936789, 0.5936789, 0.5936789, 1)
 
 [sub_resource type="Theme" id="Theme_clij1"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_y1moa"]
+load_path = "res://.godot/imported/Clip path group (13).png-fb6cf4d3fbb83990b40579fa7543dfc5.ctex"
 
 [node name="Essay" type="Control" unique_id=89132923]
 layout_mode = 3
@@ -35,10 +38,10 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_clij1")
 [node name="bagian_soal" type="TextureRect" parent="Node/Panel" unique_id=173088727]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.1358507
+anchor_left = 0.14930555
 anchor_top = 0.027777778
-anchor_right = 0.86414933
-anchor_bottom = 0.6126543
+anchor_right = 0.8564661
+anchor_bottom = 0.595679
 grow_horizontal = 2
 theme = SubResource("Theme_clij1")
 texture = ExtResource("2_nrpqx")
@@ -58,6 +61,27 @@ theme = SubResource("Theme_clij1")
 texture = ExtResource("3_y1moa")
 expand_mode = 1
 
+[node name="list_soal" type="Label" parent="Node/Panel/bagian_soal" unique_id=1816121036]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -359.0
+offset_top = -32.5
+offset_right = 359.0
+offset_bottom = 32.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("4_y46et")
+theme_override_font_sizes/font_size = 30
+text = "Budi Memiliki 14 apel, jika anto memiliki 7 apel
+berapa jumlah apel yang dimiliki budi dan anto?"
+horizontal_alignment = 1
+
 [node name="Label" type="Label" parent="Node/Panel/bagian_soal" unique_id=1558668812]
 layout_mode = 1
 anchors_preset = -1
@@ -71,22 +95,6 @@ theme_override_fonts/font = ExtResource("4_y46et")
 theme_override_font_sizes/font_size = 18
 text = "Tantangan Matematika
 Penjumlahan dan Pengurangan"
-horizontal_alignment = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="Label" type="Label" parent="Node/Panel/bagian_soal/Label" unique_id=1816121036]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.658147
-anchor_top = 2.68
-anchor_right = 1.6357827
-anchor_bottom = 3.98
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 6
-theme_override_fonts/font = ExtResource("4_y46et")
-theme_override_font_sizes/font_size = 30
-text = "Budi Memiliki 14 apel, jika anto memiliki 7 apel
-berapa jumlah apel yang dimiliki budi dan anto?"
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
@@ -202,3 +210,33 @@ theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("4_y46et")
 theme_override_font_sizes/font_size = 50
 text = "D. 17"
+
+[node name="label_chapter" type="TextureRect" parent="Node/Panel" unique_id=1796680493]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -160.24744
+offset_bottom = 58.0
+grow_horizontal = 0
+texture = SubResource("CompressedTexture2D_y1moa")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Node/Panel/label_chapter" unique_id=256939697]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -49.81186
+offset_top = -10.5
+offset_right = 49.81186
+offset_bottom = 10.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9490196, 0.74509805, 0.4, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("4_y46et")
+theme_override_font_sizes/font_size = 20
+text = "chapter 1"
