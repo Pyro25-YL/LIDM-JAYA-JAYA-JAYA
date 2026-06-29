@@ -1,0 +1,326 @@
+[gd_scene format=3 uid="uid://7tp5p5r8xj3s"]
+
+[ext_resource type="Script" uid="uid://cbp34jh742kuq" path="res://Scenes/level_menu.gd" id="1_4xfxg"]
+[ext_resource type="Texture2D" uid="uid://dlg62vkdv2jmv" path="res://Assets/Img/Chapter1Background.jpg" id="1_osod7"]
+[ext_resource type="Texture2D" uid="uid://tw12q3o2pw4e" path="res://Assets/Img/BackNormal.png" id="2_4xfxg"]
+[ext_resource type="Texture2D" uid="uid://dvagiy5dexmt0" path="res://Assets/Img/LevelIcon.png" id="3_osod7"]
+[ext_resource type="Texture2D" uid="uid://b8vnkjg6ob24r" path="res://Assets/Img/NumAssets/1.png" id="5_enpeq"]
+[ext_resource type="Texture2D" uid="uid://ggs5axam3ony" path="res://Assets/Img/NumAssets/2.png" id="6_5wabi"]
+[ext_resource type="Texture2D" uid="uid://dujjxqlqjs0cc" path="res://Assets/Img/NumAssets/3.png" id="7_fwj3b"]
+[ext_resource type="Texture2D" uid="uid://v67nnks1ijlb" path="res://Assets/Img/locked.png" id="8_fwj3b"]
+[ext_resource type="Texture2D" uid="uid://b822stkdg2bir" path="res://Assets/Img/lockIcon.png" id="9_7kf1d"]
+
+[node name="LevelMenu" type="Node2D" unique_id=1443672136]
+script = ExtResource("1_4xfxg")
+
+[node name="UI" type="Control" parent="." unique_id=413516429]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="UI" unique_id=471475680]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_osod7")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="BackButton" type="TextureButton" parent="UI" unique_id=935315861]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 180.0
+offset_bottom = 95.0
+texture_normal = ExtResource("2_4xfxg")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="CenterContainer" type="CenterContainer" parent="UI" unique_id=1052389389]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_right = -0.8149414
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="UI/CenterContainer" unique_id=485582230]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/CenterContainer/PanelContainer" unique_id=1792132523]
+layout_mode = 2
+theme_override_constants/margin_left = 45
+theme_override_constants/margin_top = 35
+theme_override_constants/margin_right = 45
+theme_override_constants/margin_bottom = 45
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/CenterContainer/PanelContainer/MarginContainer" unique_id=489860444]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="TitleLabel" type="Label" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=442849203]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.941176, 0.784314, 1)
+theme_override_colors/font_outline_color = Color(0.180392, 0.117647, 0.0588235, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 36
+text = "SELECT LEVEL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LevelGrid" type="GridContainer" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=415596098]
+layout_mode = 2
+theme_override_constants/h_separation = 25
+theme_override_constants/v_separation = 25
+columns = 5
+
+[node name="LevelButton_1" type="TextureButton" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid" unique_id=1748209705]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture_normal = ExtResource("3_osod7")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Number" type="TextureRect" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid/LevelButton_1" unique_id=869796335]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -30.0
+offset_top = -29.0
+offset_right = 29.0
+offset_bottom = 27.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_enpeq")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="LevelButton_2" type="TextureButton" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid" unique_id=2127872876]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture_normal = ExtResource("3_osod7")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Number" type="TextureRect" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid/LevelButton_2" unique_id=839068733]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -27.0
+offset_top = -32.0
+offset_right = 26.0
+offset_bottom = 28.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_5wabi")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="LevelButton_3" type="TextureButton" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid" unique_id=1745672365]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture_normal = ExtResource("3_osod7")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Number" type="TextureRect" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid/LevelButton_3" unique_id=1833480107]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = -30.0
+offset_right = 25.0
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_fwj3b")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="LevelButton_4" type="TextureButton" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid" unique_id=43628593]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture_normal = ExtResource("8_fwj3b")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Number" type="TextureRect" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid/LevelButton_4" unique_id=1007321577]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_7kf1d")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="LevelButton_5" type="TextureButton" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid" unique_id=1058863464]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture_normal = ExtResource("8_fwj3b")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Number" type="TextureRect" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid/LevelButton_5" unique_id=1244138486]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_7kf1d")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="LevelButton_6" type="TextureButton" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid" unique_id=902819684]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture_normal = ExtResource("8_fwj3b")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Number" type="TextureRect" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid/LevelButton_6" unique_id=110863523]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_7kf1d")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="LevelButton_7" type="TextureButton" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid" unique_id=1545862698]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture_normal = ExtResource("8_fwj3b")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Number" type="TextureRect" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid/LevelButton_7" unique_id=2082423644]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_7kf1d")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="LevelButton_8" type="TextureButton" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid" unique_id=218834269]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture_normal = ExtResource("8_fwj3b")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Number" type="TextureRect" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid/LevelButton_8" unique_id=664074556]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_7kf1d")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="LevelButton_9" type="TextureButton" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid" unique_id=1609853633]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture_normal = ExtResource("8_fwj3b")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Number" type="TextureRect" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid/LevelButton_9" unique_id=1079963561]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_7kf1d")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="LevelButton_10" type="TextureButton" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid" unique_id=397978661]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture_normal = ExtResource("8_fwj3b")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Number" type="TextureRect" parent="UI/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/LevelGrid/LevelButton_10" unique_id=1418775454]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_7kf1d")
+expand_mode = 1
+stretch_mode = 3
