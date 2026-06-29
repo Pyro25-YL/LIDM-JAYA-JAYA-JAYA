@@ -110,7 +110,7 @@ func _on_jawaban_terpilih(pilihan: String) -> void:
 func _selesai_kuis() -> void:
 	print("Sistem: Kuis Selesai! Skor Benar: ", skor_benar, " dari ", total_soal)
 	
-	var evaluasi_scene = load("res://Scenes/EvaluasiPage.tscn")
+	var evaluasi_scene = load("res://Scenes/Evaluasi&Penilaian.tscn")
 	if evaluasi_scene:
 		var evaluasi_instance = evaluasi_scene.instantiate()
 		get_tree().root.add_child(evaluasi_instance)
