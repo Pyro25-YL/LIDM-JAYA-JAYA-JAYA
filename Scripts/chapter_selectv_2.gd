@@ -30,16 +30,16 @@ func _on_btn_back_button_up() -> void:
 
 
 func _on_texture_button_button_up() -> void:
-	get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
+	get_tree().change_scene_to_file("res://Scenes/LevelMenu.tscn")
 
 
 func _on_texture_button_2_button_up() -> void:
-	get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
+	get_tree().change_scene_to_file("res://Scenes/LevelMenu.tscn")
 
 
 func _on_texture_button_3_button_up() -> void:
-	get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
+	get_tree().change_scene_to_file("res://Scenes/LevelMenu.tscn")
 
 
 func _on_texture_button_4_button_up() -> void:
-	get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
+	get_tree().change_scene_to_file("res://Scenes/LevelMenu.tscn")

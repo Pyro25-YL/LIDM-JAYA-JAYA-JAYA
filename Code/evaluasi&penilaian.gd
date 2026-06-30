@@ -176,14 +176,14 @@ func _button_settings() -> void:
 	btn_retest.pressed.connect(_on_btn_retest_pressed)
 
 func _on_btn_back_pressed() -> void:
-	var main_scene = load("res://Scenes/MainScreen.tscn")
+	var main_scene = load("res://Scenes/MainMenu.tscn")
 	if main_scene:
 		get_tree().change_scene_to_packed(main_scene)
 	else:
 		print("Error: Gagal memuat MainScreen.tscn")
 
 func _on_btn_retest_pressed() -> void:
-	var essay_scene = load("res://Scenes/Essay.tscn")
+	var essay_scene = load("res://Scenes/MainMenu.tscn")
 	if essay_scene:
 		get_tree().change_scene_to_packed(essay_scene)
 	else:

@@ -20,7 +20,7 @@ var locked_button = preload("res://Assets/Img/locked.png")
 var locked_number = preload("res://Assets/Img/lockIcon.png")
 
 # Level yang sudah terbuka
-var unlocked_level = 1
+var unlocked_level = 2
 
 func _ready():
 	back_button.pressed.connect(_on_back_button_pressed)
@@ -59,7 +59,7 @@ func _on_level1_pressed():
 
 
 func _on_level2_pressed():
-	get_tree().change_scene_to_file("res://Scenes/Essay.tscn")
+	get_tree().change_scene_to_file("res://Scenes/DragAndDropCoding.tscn")
 
 
 func _on_level3_pressed():
